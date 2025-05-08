@@ -15,12 +15,13 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
-                
+
         # fill the screen
         screen.fill("black")
 
         # draw objects
         player.draw(screen)
+        player.update(dt)
 
         # update the screen
         pygame.display.flip()
