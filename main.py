@@ -20,8 +20,10 @@ def main():
         screen.fill("black")
 
         # draw objects
+        # player
         player.draw(screen)
         player.update(dt)
+        player.move(dt)
 
         # update the screen
         pygame.display.flip()
